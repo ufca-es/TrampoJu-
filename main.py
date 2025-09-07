@@ -10,14 +10,14 @@ def save_knowledge_base(file_path: str, data: dict):
     with open(file_path, 'w') as file:
         json.dump(data, file, indent = 2)
 
-def find_best_match(user_question: str, questions: list[str]) -> str | None:
-    matches: list = get_close_matches(user_question, questions, n = 1, cutoff = 0.6)
+def find_best_match(user_question: str, perguntas: list[str]) -> str | None:
+    matches: list = get_close_matches(user_question, perguntas, n = 1, cutoff = 0.6)
     return matches[0] if matches else None
 
-def get_answer_for_question(question: str, knowledge_base: dict) -> str | None:
-    for i in knowledge_base["questions"]:
-        if i["question"] == question:
-            return i["answer"]
+def get_answer_for_question(pergunta: str, knowledge_base: dict) -> str | None:
+    for i in knowledge_base["perguntas"]:
+        if i["perguntas"] == pergunta:
+            return i["resposta"]
         
 def chat_bot():
     knowledge_base: dict = load_knowledge_base('knowledge_base.json')
@@ -28,19 +28,19 @@ def chat_bot():
         if user_input.lower() == 'sair':
             break
 
-        best_match: str | None = find_best_match(user_input, [i["question"] for i in knowledge_base["questions"]])
+        best_match: str | None = find_best_match(user_input, [i["pergunta"] for i in knowledge_base["perguntas"]])
 
         if best_match:
-            answer =  get_answer_for_question(best_match, knowledge_base)
-            print(f"TrampoJuá: {answer}")
+            resposta =  get_answer_for_question(best_match, knowledge_base)
+            print(f"TrampoJuá: {resposta}")
         else:
-            print('Bot: I don\'t know the answer. Can you teach me?')
-            new_answer: str = input('Type the answer or "skip" to skip: ')
+            print('TrampoJuá: Não sei te informar sobre isso. Você pode me ensinar?')
+            new_answer: str = input('Digite a resposta ou "pular" para pular: ')
 
-            if new_answer.lower() != 'skip':
+            if new_answer.lower() != 'pular':
                 knowledge_base["questions"].append({"question": user_input, "answer": new_answer})
                 save_knowledge_base('knowledge_base.json', knowledge_base)
-                print('Bot: Thak you! I learned a new answer!')
+                print('TrampoJuá: Obrigado! Aprendi uma nova informação!')
 
 if __name__ == '__main__':
     chat_bot()
