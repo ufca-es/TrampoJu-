@@ -1,5 +1,8 @@
 {
   "perguntas": [
-
+    {
+      "pergunta": "Olá!",
+      "resposta": "Olá, como posso te ajudar?"
+    }
   ]
 }

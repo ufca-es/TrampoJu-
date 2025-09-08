@@ -2,7 +2,7 @@ import json
 from difflib import get_close_matches
 
 class ChatBot:
-    def __init__(self, nome: str, arquivo_base: str, personalidade: str = "padrão"):
+    def __init__(self, nome: str, arquivo_base: str, personalidade: str = "formal"):
         self.nome = nome
         self.arquivo_base = arquivo_base
         self.personalidade = personalidade
@@ -37,16 +37,16 @@ class ChatBot:
     def falar(self, mensagem: str) -> str:
         if self.personalidade == "formal":
             return f"{self.nome}: Prezado usuário, {mensagem}"
-        elif self.personalidade == "amigável":
-            return f"{self.nome}: 😃 {mensagem}"
-        elif self.personalidade == "motivacional":
-            return f"{self.nome}: 💪 {mensagem}! Você consegue!"
+        elif self.personalidade == "orientador":
+            return f"{self.nome}: 📘 Veja bem, {mensagem}. Continue estudando e praticando!"
+        elif self.personalidade == "engraçado":
+            return f"{self.nome}: 😂 {mensagem} (e não esquece o cafezinho!)"
         else:
             return f"{self.nome}: {mensagem}"
 
     # Alterar personalidade durante execução
     def alterar_personalidade(self, nova: str):
-        if nova in ["formal", "amigável", "motivacional", "padrão"]:
+        if nova in ["formal", "orientador", "engraçado"]:
             self.personalidade = nova
             print(self.falar(f"Personalidade alterada para '{nova}'."))
         else:
