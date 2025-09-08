@@ -1,89 +1,169 @@
 import json
 from difflib import get_close_matches
 
-class ChatBot:
-    def __init__(self, nome: str, arquivo_base: str, personalidade: str = "formal"):
+class ChatBotEmpregos:
+    def __init__(self, nome: str, arquivo_vagas: str, arquivo_conhecimento: str, personalidade: str = "formal"):
         self.nome = nome
-        self.arquivo_base = arquivo_base
+        self.arquivo_vagas = arquivo_vagas
+        self.arquivo_conhecimento = arquivo_conhecimento
         self.personalidade = personalidade
-        self.knowledge_base = self.load_knowledge_base()
+        self.vagas = self.load_database(self.arquivo_vagas, "vagas")
+        self.knowledge_base = self.load_database(self.arquivo_conhecimento, "perguntas")
 
-    # Carregar base de conhecimento
-    def load_knowledge_base(self) -> dict:
+    # Carregar banco de dados (vagas ou conhecimento)
+    def load_database(self, arquivo: str, chave: str) -> dict:
         try:
-            with open(self.arquivo_base, "r", encoding="utf-8") as f:
+            with open(arquivo, "r", encoding="utf-8") as f:
                 return json.load(f)
         except FileNotFoundError:
-            return {"perguntas": []}
+            return {chave: []}
 
-    # Salvar base de conhecimento
-    def save_knowledge_base(self):
-        with open(self.arquivo_base, "w", encoding="utf-8") as f:
-            json.dump(self.knowledge_base, f, indent=2, ensure_ascii=False)
-
-    # Encontrar melhor correspondência
-    def find_best_match(self, user_question: str) -> str | None:
-        perguntas = [i["pergunta"] for i in self.knowledge_base["perguntas"]]
-        matches = get_close_matches(user_question, perguntas, n=1, cutoff=0.6)
-        return matches[0] if matches else None
-
-    # Pegar resposta para pergunta
-    def get_answer_for_question(self, pergunta: str) -> str | None:
-        for i in self.knowledge_base["perguntas"]:
-            if i["pergunta"] == pergunta:
-                return i["resposta"]
+    # Salvar banco de dados
+    def save_database(self, arquivo: str, data: dict):
+        with open(arquivo, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
 
     # Estilo da personalidade
     def falar(self, mensagem: str) -> str:
         if self.personalidade == "formal":
             return f"{self.nome}: Prezado usuário, {mensagem}"
         elif self.personalidade == "orientador":
-            return f"{self.nome}: 📘 Veja bem, {mensagem}. Continue estudando e praticando!"
+            return f"{self.nome}: 📘 Veja bem, {mensagem}. Continue se preparando para as entrevistas!"
         elif self.personalidade == "engraçado":
-            return f"{self.nome}: 😂 {mensagem} (e não esquece o cafezinho!)"
+            return f"{self.nome}: 😂 {mensagem} (e se não conseguir emprego, sempre tem vaga de degustador de café!)"
         else:
             return f"{self.nome}: {mensagem}"
 
-    # Alterar personalidade durante execução
-    def alterar_personalidade(self, nova: str):
-        if nova in ["formal", "orientador", "engraçado"]:
-            self.personalidade = nova
-            print(self.falar(f"Personalidade alterada para '{nova}'."))
-        else:
-            print(self.falar("Não conheço essa personalidade."))
+    # Alterar personalidade
+    def alterar_personalidade(self):
+        print("\nEscolha uma personalidade:")
+        print("1 - Formal")
+        print("2 - Orientador")
+        print("3 - Engraçado")
+        escolha = input("Opção: ")
 
-    # Loop de interação
-    def iniciar(self):
+        if escolha == "1":
+            self.personalidade = "formal"
+        elif escolha == "2":
+            self.personalidade = "orientador"
+        elif escolha == "3":
+            self.personalidade = "engraçado"
+        else:
+            print(self.falar("Opção inválida. Mantendo a personalidade atual."))
+            return
+
+        print(self.falar(f"Personalidade alterada para '{self.personalidade}'."))
+
+    # Cadastrar nova vaga
+    def cadastrar_vaga(self):
+        print("\n--- Cadastro de Vaga ---")
+        titulo = input("Título da vaga: ")
+        empresa = input("Empresa: ")
+        local = input("Local: ")
+        requisitos = input("Requisitos: ")
+
+        self.vagas["vagas"].append({
+            "titulo": titulo,
+            "empresa": empresa,
+            "local": local,
+            "requisitos": requisitos
+        })
+
+        self.save_database(self.arquivo_vagas, self.vagas)
+        print(self.falar("Vaga cadastrada com sucesso!"))
+
+    # Buscar vaga por palavra-chave
+    def buscar_vaga(self):
+        palavra = input("\nDigite uma palavra-chave para buscar vagas: ")
+        resultados = []
+        for vaga in self.vagas["vagas"]:
+            texto = f"{vaga['titulo']} {vaga['empresa']} {vaga['local']} {vaga['requisitos']}".lower()
+            if palavra.lower() in texto:
+                resultados.append(vaga)
+
+        if resultados:
+            print(self.falar(f"Encontrei {len(resultados)} vaga(s):"))
+            for vaga in resultados:
+                print(f"- {vaga['titulo']} na {vaga['empresa']} ({vaga['local']})")
+                print(f"  Requisitos: {vaga['requisitos']}\n")
+        else:
+            print(self.falar("Não encontrei vagas com essa palavra-chave."))
+
+    # Listar todas as vagas
+    def listar_vagas(self):
+        if not self.vagas["vagas"]:
+            print(self.falar("Não há vagas cadastradas no momento."))
+            return
+
+        print(self.falar(f"Temos {len(self.vagas['vagas'])} vaga(s) cadastrada(s):"))
+        for vaga in self.vagas["vagas"]:
+            print(f"- {vaga['titulo']} na {vaga['empresa']} ({vaga['local']})")
+            print(f"  Requisitos: {vaga['requisitos']}\n")
+
+    # --- Funcionalidade de conversa ---
+    def conversa(self):
+        print(self.falar("Você entrou no modo conversa. Digite 'sair' para voltar ao menu."))
+
         while True:
             user_input = input("Você: ")
 
             if user_input.lower() == "sair":
-                print(self.falar("Até logo!"))
+                print(self.falar("Saindo do modo conversa..."))
                 break
 
-            # Comando para mudar personalidade
-            if user_input.lower().startswith("mudar personalidade"):
-                _, _, nova = user_input.partition(" ")
-                nova = nova.replace("personalidade", "").strip()
-                self.alterar_personalidade(nova)
-                continue
-
-            best_match = self.find_best_match(user_input)
+            perguntas = [i["pergunta"] for i in self.knowledge_base["perguntas"]]
+            best_match = get_close_matches(user_input, perguntas, n=1, cutoff=0.6)
 
             if best_match:
-                resposta = self.get_answer_for_question(best_match)
+                resposta = next(i["resposta"] for i in self.knowledge_base["perguntas"] if i["pergunta"] == best_match[0])
                 print(self.falar(resposta))
             else:
-                print(self.falar("Não sei te informar sobre isso. Você pode me ensinar?"))
+                print(self.falar("Não sei responder a isso. Você pode me ensinar?"))
                 new_answer = input("Digite a resposta ou 'pular' para pular: ")
 
                 if new_answer.lower() != "pular":
-                    self.knowledge_base["perguntas"].append(
-                        {"pergunta": user_input, "resposta": new_answer}
-                    )
-                    self.save_knowledge_base()
-                    print(self.falar("Obrigado! Aprendi uma nova informação!"))
+                    self.knowledge_base["perguntas"].append({"pergunta": user_input, "resposta": new_answer})
+                    self.save_database(self.arquivo_conhecimento, self.knowledge_base)
+                    print(self.falar("Obrigado! Aprendi uma nova resposta!"))
 
+    # Menu principal
+    def iniciar(self):
+        print(self.falar("Olá! Sou o TrampoJuá, seu assistente de empregos."))
+
+        while True:
+            print("\n--- Menu ---")
+            print("1 - Buscar vaga")
+            print("2 - Cadastrar vaga")
+            print("3 - Listar vagas")
+            print("4 - Mudar personalidade")
+            print("5 - Conversa livre")
+            print("6 - Sair")
+
+            opcao = input("Escolha uma opção: ")
+
+            if opcao == "1":
+                self.buscar_vaga()
+            elif opcao == "2":
+                self.cadastrar_vaga()
+            elif opcao == "3":
+                self.listar_vagas()
+            elif opcao == "4":
+                self.alterar_personalidade()
+            elif opcao == "5":
+                self.conversa()
+            elif opcao == "6":
+                print(self.falar("Até logo! Boa sorte na sua carreira!"))
+                break
+            else:
+                print(self.falar("Opção inválida. Tente novamente."))
+
+
+# Execução principal
 if __name__ == "__main__":
-    bot = ChatBot(nome="TrampoJuá", arquivo_base="knowledge_base.json", personalidade="padrão")
+    bot = ChatBotEmpregos(
+        nome="TrampoJuá",
+        arquivo_vagas="vagas.json",
+        arquivo_conhecimento="knowledge_base.json",
+        personalidade="formal"
+    )
     bot.iniciar()
