@@ -1,5 +1,101 @@
 {
   "perguntas": [
-
+    {
+      "pergunta": "buscar vagas",
+      "respostas": [
+        "listagem"
+      ]
+    },
+    {
+      "pergunta": "ADM",
+      "respostas": [
+        "ADM"
+      ]
+    },
+    {
+      "pergunta": "TI",
+      "respostas": [
+        "TI"
+      ]
+    },
+    {
+      "pergunta": "Limpeza",
+      "respostas": [
+        "Limpeza"
+      ]
+    },
+    {
+      "pergunta": "Vendas",
+      "respostas": [
+        "Vendas"
+      ]
+    },
+    {
+      "pergunta": "Boa Tarde!",
+      "respostas": [
+        "Boa tarde, me chamo TrampoJuá e sou seu chatbot de empregos! em que posso ajudar?",
+        "Boa tarde! Eu sou um ChatBot, criado especialmente para te ajudar a encontrar a sua vaga de emprego. Como posso te ajudar?"
+      ]
+    },
+    {
+      "pergunta": "Bom dia",
+      "respostas": [
+        "Boa tarde, sou o trampojua e sou seu chatbot de empregos! em que posso ajudar?"
+      ]
+    },
+    {
+      "pergunta": "tem vagas de emprego?",
+      "respostas": [
+        "Sim, no nosso menu clique em listar vagas, vai ter diversas vagas, em diferentes setores."
+      ]
+    },
+    {
+      "pergunta": "vagas?",
+      "respostas": [
+        "sim, tem! no nosso menu, acesse listar vagas, boa sorte!"
+      ]
+    },
+    {
+      "pergunta": "& C:/Users/rai/AppData/Local/Programs/Python/Python313/python.exe c:/Users/rai/Documents/chatbot_vagas/ma3in.py/main.py",
+      "respostas": [
+        "sair"
+      ]
+    },
+    {
+      "pergunta": "como faço um curriculo?",
+      "respostas": [
+        "Um bom currículo deve ter: dados pessoais, objetivo, formação acadêmica, experiências (se houver) e habilidades. Seja claro e direto, de preferência em 1 página."
+      ]
+    },
+    {
+      "pergunta": "curriculo",
+      "respostas": [
+        "Você pode montar seu currículo no Word ou Canva, colocando dados pessoais, objetivo, experiências e cursos. Se quiser posso te dar um modelo básico."
+      ]
+    },
+    {
+      "pergunta": "linkedin",
+      "respostas": [
+        "Você pode acessar e criar seu perfil no LinkedIn por aqui: https://www.linkedin.com/"
+      ]
+    },
+    {
+      "pergunta": "perfil linkedin",
+      "respostas": [
+        "Crie seu perfil no LinkedIn e aumente suas chances de conseguir emprego! Link: https://www.linkedin.com/"
+      ]
+    },
+    {
+      "pergunta": "Olá!",
+      "respostas": [
+        "Olá! Como posso te ajudar?"
+      ]
+    },
+    {
+      "pergunta": "Tchau",
+      "respostas": [
+        "Espero ter te ajudado, até logo!"
+      ]
+    }
   ]
 }
