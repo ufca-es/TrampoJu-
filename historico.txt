@@ -1,10 +1,10 @@
-Você: Boa noite!
-TrampoJuá: Boa tarde, me chamo TrampoJuá e sou seu chatbot de empregos! em que posso ajudar?
-Você: Boa tarde
-TrampoJuá: Boa tarde! Eu sou um ChatBot, criado especialmente para te ajudar a encontrar a sua vaga de emprego. Como posso te ajudar?
-Você: bom dia
-TrampoJuá: Boa tarde, sou o trampojua e sou seu chatbot de empregos! em que posso ajudar?
 Você: linkedin
 TrampoJuá: Você pode acessar e criar seu perfil no LinkedIn por aqui: https://www.linkedin.com/
 Você: Olá!
 TrampoJuá: Olá! Como posso te ajudar?
+Você: boa tarde
+TrampoJuá: Boa tarde! Eu sou um ChatBot, criado especialmente para te ajudar a encontrar a sua vaga de emprego. Como posso te ajudar?
+Você: teste de nova pergunta
+TrampoJuá: passou no teste
+Você: teste de nova pergunta
+TrampoJuá: passou no teste

@@ -5,11 +5,12 @@ from collections import deque
 
 
 class ChatBotEmpregos:
-    def __init__(self, nome: str, arquivo_vagas: str, arquivo_conhecimento: str, arquivo_historico: str, personalidade: str = "formal"):
+    def __init__(self, nome: str, arquivo_vagas: str, arquivo_conhecimento: str, arquivo_historico: str, arquivo_perguntas: str, personalidade: str = "formal"):
         self.nome = nome
         self.arquivo_vagas = arquivo_vagas
         self.arquivo_conhecimento = arquivo_conhecimento
         self.arquivo_historico = arquivo_historico
+        self.arquivo_perguntas = arquivo_perguntas  # novo arquivo
         self.personalidade = personalidade
         self.vagas = self.load_database(self.arquivo_vagas, "vagas")
         self.knowledge_base = self.load_database(self.arquivo_conhecimento, "perguntas")
@@ -17,7 +18,7 @@ class ChatBotEmpregos:
 
     # ---------------- HISTÓRICO ----------------
     def load_historico(self):
-        historico = deque(maxlen=10)  # 5 interações completas (10 linhas)
+        historico = deque(maxlen=10)  # 5 interações completas
         try:
             with open(self.arquivo_historico, "r", encoding="utf-8") as f:
                 for linha in f:
@@ -41,6 +42,11 @@ class ChatBotEmpregos:
                 except IndexError:
                     pass
             print("-" * 40)
+
+    # ---------------- NOVAS PERGUNTAS ----------------
+    def save_pergunta_nova(self, pergunta: str):
+        with open(self.arquivo_perguntas, "a", encoding="utf-8") as f:
+            f.write(pergunta + "\n")
 
     # ---------------- BANCOS DE DADOS ----------------
     def load_database(self, arquivo: str, chave: str) -> dict:
@@ -172,6 +178,7 @@ class ChatBotEmpregos:
 
             else:
                 print(self.falar("Não sei responder a isso. Você pode me ensinar?"))
+                self.save_pergunta_nova(user_input)  # salva pergunta desconhecida
                 new_answer = input("Digite a resposta ou 'pular' para pular: ")
 
                 if new_answer.lower() != "pular":
@@ -232,6 +239,7 @@ if __name__ == "__main__":
         arquivo_vagas="vagas.json",
         arquivo_conhecimento="knowledge_base.json",
         arquivo_historico="historico.txt",
+        arquivo_perguntas="novas_perguntas.txt",  # novo arquivo
         personalidade="formal"
     )
     bot.iniciar()
