@@ -3,122 +3,100 @@
     {
       "pergunta": "buscar vagas",
       "respostas": [
-        "listagem",
-        "Aqui estão as vagas disponíveis, confira a lista no menu 'listar vagas'.",
-        "Você pode buscar as vagas clicando na opção 'listar vagas'."
+        "listagem"
       ]
     },
     {
       "pergunta": "ADM",
       "respostas": [
-        "ADM",
-        "Vagas para Administração estão disponíveis, acesse 'listar vagas'.",
-        "Confira nossas oportunidades na área de Administração no menu de vagas."
+        "ADM"
       ]
     },
     {
       "pergunta": "TI",
       "respostas": [
-        "TI",
-        "Temos diversas vagas de TI, confira a lista completa em 'listar vagas'.",
-        "O setor de Tecnologia da Informação tem oportunidades para você."
+        "TI"
       ]
     },
     {
       "pergunta": "Limpeza",
       "respostas": [
-        "Limpeza",
-        "Você pode ver as vagas de limpeza no menu 'listar vagas'.",
-        "Há oportunidades para limpeza, acesse a listagem para mais detalhes."
+        "Limpeza"
       ]
     },
     {
       "pergunta": "Vendas",
       "respostas": [
-        "Vendas",
-        "O setor de Vendas tem vagas abertas, confira no menu de vagas.",
-        "Confira as oportunidades em Vendas na lista de vagas."
+        "Vendas"
       ]
     },
     {
       "pergunta": "Boa Tarde!",
       "respostas": [
-        "Boa tarde, me chamo TrampoJuá e sou seu chatbot de empregos! Em que posso ajudar?",
-        "Boa tarde! Eu sou um ChatBot, criado especialmente para te ajudar a encontrar a sua vaga de emprego. Como posso te ajudar?",
-        "Boa tarde! Que bom te ver por aqui. Quer ajuda para encontrar uma vaga de emprego?"
+        "Boa tarde, me chamo TrampoJuá e sou seu chatbot de empregos! em que posso ajudar?",
+        "Boa tarde! Eu sou um ChatBot, criado especialmente para te ajudar a encontrar a sua vaga de emprego. Como posso te ajudar?"
       ]
     },
     {
       "pergunta": "Bom dia",
       "respostas": [
-        "Bom dia, sou o TrampoJuá e sou seu chatbot de empregos! Em que posso ajudar?",
-        "Bom dia! Sou seu assistente para encontrar vagas de emprego. Posso te ajudar?",
-        "Olá! Bom dia, pronto para buscar sua próxima oportunidade de trabalho?"
+        "Boa tarde, sou o trampojua e sou seu chatbot de empregos! em que posso ajudar?"
       ]
     },
     {
       "pergunta": "tem vagas de emprego?",
       "respostas": [
-        "Sim, no nosso menu clique em listar vagas, vai ter diversas vagas, em diferentes setores.",
-        "Claro! Acesse 'listar vagas' no menu para ver todas as oportunidades disponíveis.",
-        "Sim, temos vagas abertas em vários setores. Confira a listagem no menu."
+        "Sim, no nosso menu clique em listar vagas, vai ter diversas vagas, em diferentes setores."
       ]
     },
     {
       "pergunta": "vagas?",
       "respostas": [
-        "Sim, tem! No nosso menu, acesse listar vagas, boa sorte!",
-        "Temos sim! Clique em 'listar vagas' para conferir todas as oportunidades.",
-        "Claro, veja todas as vagas disponíveis no menu 'listar vagas'."
+        "sim, tem! no nosso menu, acesse listar vagas, boa sorte!"
+      ]
+    },
+    {
+      "pergunta": "& C:/Users/rai/AppData/Local/Programs/Python/Python313/python.exe c:/Users/rai/Documents/chatbot_vagas/ma3in.py/main.py",
+      "respostas": [
+        "sair"
       ]
     },
     {
       "pergunta": "como faço um curriculo?",
       "respostas": [
-        "Um bom currículo deve ter: dados pessoais, objetivo, formação acadêmica, experiências (se houver) e habilidades. Seja claro e direto, de preferência em 1 página.",
-        "Monte seu currículo incluindo informações pessoais, experiências, cursos e habilidades principais.",
-        "Crie um currículo conciso e direto, com dados pessoais, objetivo, formação e experiências."
+        "Um bom currículo deve ter: dados pessoais, objetivo, formação acadêmica, experiências (se houver) e habilidades. Seja claro e direto, de preferência em 1 página."
       ]
     },
     {
       "pergunta": "curriculo",
       "respostas": [
-        "Você pode montar seu currículo no Word ou Canva, colocando dados pessoais, objetivo, experiências e cursos. Se quiser posso te dar um modelo básico.",
-        "Para criar seu currículo, inclua seus dados pessoais, formação e experiências relevantes.",
-        "Um bom currículo é claro e direto. Posso te enviar um modelo simples se quiser."
+        "Você pode montar seu currículo no Word ou Canva, colocando dados pessoais, objetivo, experiências e cursos. Se quiser posso te dar um modelo básico."
       ]
     },
     {
       "pergunta": "linkedin",
       "respostas": [
-        "Você pode acessar e criar seu perfil no LinkedIn por aqui: https://www.linkedin.com/",
-        "LinkedIn é ótimo para networking. Crie seu perfil aqui: https://www.linkedin.com/",
-        "Fortaleça sua rede profissional criando seu LinkedIn: https://www.linkedin.com/"
+        "Você pode acessar e criar seu perfil no LinkedIn por aqui: https://www.linkedin.com/"
       ]
     },
     {
       "pergunta": "perfil linkedin",
       "respostas": [
-        "Crie seu perfil no LinkedIn e aumente suas chances de conseguir emprego! Link: https://www.linkedin.com/",
-        "Ter um perfil completo no LinkedIn ajuda muito na busca por emprego. Link: https://www.linkedin.com/",
-        "LinkedIn é essencial para oportunidades de emprego. Crie seu perfil aqui: https://www.linkedin.com/"
+        "Crie seu perfil no LinkedIn e aumente suas chances de conseguir emprego! Link: https://www.linkedin.com/"
       ]
     },
     {
       "pergunta": "Olá!",
       "respostas": [
-        "Olá! Como posso te ajudar?",
-        "Oi! Estou aqui para te ajudar a encontrar vagas de emprego.",
-        "Olá! Quer ajuda para buscar oportunidades de trabalho?"
+        "Olá! Como posso te ajudar?"
       ]
     },
     {
       "pergunta": "Tchau",
       "respostas": [
-        "Espero ter te ajudado, até logo!",
-        "Até mais! Boa sorte na sua busca por emprego.",
-        "Tchau! Volte sempre que quiser consultar vagas."
+        "Espero ter te ajudado, até logo!"
       ]
     }
+
   ]
 }

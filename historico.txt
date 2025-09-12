@@ -1,10 +1,10 @@
-Você: curriculo
-TrampoJuá: Um bom currículo é claro e direto. Posso te enviar um modelo simples se quiser.
-Você: linkedin
-TrampoJuá: LinkedIn é ótimo para networking. Crie seu perfil aqui: https://www.linkedin.com/
 Você: linkedin
 TrampoJuá: Você pode acessar e criar seu perfil no LinkedIn por aqui: https://www.linkedin.com/
-Você: boa tarde
-TrampoJuá: Boa tarde! Que bom te ver por aqui. Quer ajuda para encontrar uma vaga de emprego?
-Você: boa tarde
-TrampoJuá: Boa tarde! Eu sou um ChatBot, criado especialmente para te ajudar a encontrar a sua vaga de emprego. Como posso te ajudar?
+Você: linkedin
+TrampoJuá: Você pode acessar e criar seu perfil no LinkedIn por aqui: https://www.linkedin.com/
+Você: linkedin
+TrampoJuá: Você pode acessar e criar seu perfil no LinkedIn por aqui: https://www.linkedin.com/
+Você: linkedin
+TrampoJuá: Você pode acessar e criar seu perfil no LinkedIn por aqui: https://www.linkedin.com/
+Você: linkedin
+TrampoJuá: Você pode acessar e criar seu perfil no LinkedIn por aqui: https://www.linkedin.com/

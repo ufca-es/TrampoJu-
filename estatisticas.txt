@@ -1,0 +1,9 @@
+📊 Relatório de Estatísticas - 12/09/2025 01:06:56
+--------------------------------------------------
+Número total de interações: 9
+Pergunta mais feita da sessão: linkedin
+Uso das personalidades:
+  - Formal: 1 vezes
+  - Orientador: 0 vezes
+  - Engraçado: 0 vezes
+--------------------------------------------------
