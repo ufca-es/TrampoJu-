@@ -1,244 +1,34 @@
 {
   "vagas": [
-    {
-      "titulo": "Enfermeiro",
-      "empresa": "São Lucas",
-      "local": "Juazeiro do Norte",
-      "requisitos": "Ser formado em Enfermagem",
-      "segmento": "Saúde",
-      "descricao": "Lidar com pacientes e atender urgências"
-    },
-    {
-      "titulo": "Auxiliar Administrativo",
-      "empresa": "Escritório RN",
-      "local": "Juazeiro do Norte",
-      "requisitos": "Ensino médio completo, boa comunicação e desejo de aprender.",
-      "segmento": "ADM",
-      "descricao": "Atuar como auxiliar no escritório"
-    },
-    {
-      "titulo": "Auxiliar de serviços gerais",
-      "empresa": "Supermercado Diniz",
-      "local": "Juazeiro do Norte",
-      "requisitos": "Ensino fundamental completo",
-      "segmento": "Limpeza",
-      "descricao": "Atuar nos serviços gerais dentro da empresa"
-    },
-    {
-      "titulo": "TI",
-      "empresa": "Full Dev",
-      "local": "Juazeiro do Norte",
-      "requisitos": "Dominar Java, facilidade em aprender e demonstrar domínio de backend.",
-      "segmento": "Dev",
-      "descricao": "Home office"
-    },
-    {
-      "titulo": "Professor",
-      "empresa": "Escola Mundo Mágico",
-      "local": "Juazeiro do Norte",
-      "requisitos": "Ser formado em licenciatura",
-      "segmento": "Educação",
-      "descricao": "Lecionar disciplinas da sua formação"
-    },
-    {
-      "titulo": "Vendedor",
-      "empresa": "Loja Econômica",
-      "local": "Juazeiro do Norte",
-      "requisitos": "Boa comunicação, ensino médio completo, experiência com vendas será um diferencial.",
-      "segmento": "Comercial",
-      "descricao": "Atender clientes e realizar vendas no setor varejista"
-    },
-    {
-      "titulo": "Atendente de lanchonete",
-      "empresa": "Fast Lanche",
-      "local": "Juazeiro do Norte",
-      "requisitos": "Disponibilidade de horário e ensino fundamental completo.",
-      "segmento": "Alimentação",
-      "descricao": "Atender clientes, montar pedidos e auxiliar na limpeza do ambiente"
-    },
-    {
-      "titulo": "Motoboy",
-      "empresa": "Entrega Já",
-      "local": "Juazeiro do Norte",
-      "requisitos": "CNH categoria A, moto própria e responsabilidade com prazos.",
-      "segmento": "Logística",
-      "descricao": "Realizar entregas rápidas dentro da cidade"
-    },
-    {
-      "titulo": "Caixa",
-      "empresa": "Mercantil Popular",
-      "local": "Juazeiro do Norte",
-      "requisitos": "Ensino médio completo, conhecimentos básicos em informática.",
-      "segmento": "Financeiro",
-      "descricao": "Atender clientes, registrar compras e receber pagamentos"
-    },
-    {
-      "titulo": "Auxiliar de Estoque",
-      "empresa": "Magazine Ceará",
-      "local": "Juazeiro do Norte",
-      "requisitos": "Ensino médio completo, ser organizado e proativo.",
-      "segmento": "Logística",
-      "descricao": "Organizar e controlar mercadorias no estoque"
-    },
-    {
-      "titulo": "Recepcionista",
-      "empresa": "Clínica Vida",
-      "local": "Juazeiro do Norte",
-      "requisitos": "Boa comunicação, ensino médio completo e noções de informática.",
-      "segmento": "Saúde",
-      "descricao": "Atender pacientes, agendar consultas e auxiliar no atendimento"
-    },
-    {
-      "titulo": "Operador de Telemarketing",
-      "empresa": "Call Center Juá",
-      "local": "Juazeiro do Norte",
-      "requisitos": "Boa comunicação, ensino médio completo, experiência será um diferencial.",
-      "segmento": "Atendimento",
-      "descricao": "Atender clientes por telefone e oferecer soluções"
-    },
-    {
-      "titulo": "Segurança",
-      "empresa": "Proseg Juazeiro",
-      "local": "Juazeiro do Norte",
-      "requisitos": "Curso de vigilante em dia e disponibilidade de horários.",
-      "segmento": "Segurança",
-      "descricao": "Monitorar áreas internas e externas garantindo a segurança"
-    },
-    {
-      "titulo": "Garçom",
-      "empresa": "Restaurante Sabor Cearense",
-      "local": "Juazeiro do Norte",
-      "requisitos": "Ensino fundamental completo, boa comunicação e agilidade.",
-      "segmento": "Alimentação",
-      "descricao": "Atender mesas e servir clientes no restaurante"
-    },
-    {
-      "titulo": "Cozinheiro",
-      "empresa": "Pizzaria Forno Quente",
-      "local": "Juazeiro do Norte",
-      "requisitos": "Experiência em cozinha, ensino fundamental completo.",
-      "segmento": "Alimentação",
-      "descricao": "Preparar pratos e auxiliar no cardápio da pizzaria"
-    },
-    {
-      "titulo": "Auxiliar de Cozinha",
-      "empresa": "Restaurante Bom Sabor",
-      "local": "Juazeiro do Norte",
-      "requisitos": "Ensino fundamental completo, disponibilidade de horário.",
-      "segmento": "Alimentação",
-      "descricao": "Ajudar no preparo de pratos e limpeza da cozinha"
-    },
-    {
-      "titulo": "Balconista de Farmácia",
-      "empresa": "Farmácia Central",
-      "local": "Juazeiro do Norte",
-      "requisitos": "Ensino médio completo, boa comunicação.",
-      "segmento": "Saúde",
-      "descricao": "Atender clientes e auxiliar na venda de medicamentos"
-    },
-    {
-      "titulo": "Frentista",
-      "empresa": "Posto Sol Nascente",
-      "local": "Juazeiro do Norte",
-      "requisitos": "Ensino fundamental completo, disponibilidade de horários.",
-      "segmento": "Serviços",
-      "descricao": "Abastecer veículos e oferecer atendimento ao cliente"
-    },
-    {
-      "titulo": "Eletricista",
-      "empresa": "EletroServ",
-      "local": "Juazeiro do Norte",
-      "requisitos": "Curso técnico em elétrica, experiência na área.",
-      "segmento": "Manutenção",
-      "descricao": "Realizar manutenção elétrica em instalações"
-    },
-    {
-      "titulo": "Pedreiro",
-      "empresa": "Construtora Juá",
-      "local": "Juazeiro do Norte",
-      "requisitos": "Experiência em obras e construções.",
-      "segmento": "Construção Civil",
-      "descricao": "Atuar em obras residenciais e comerciais"
-    },
-    {
-      "titulo": "Auxiliar de Produção",
-      "empresa": "Indústria Juazeiro",
-      "local": "Juazeiro do Norte",
-      "requisitos": "Ensino médio completo, disposição para trabalho em equipe.",
-      "segmento": "Indústria",
-      "descricao": "Auxiliar na linha de produção da fábrica"
-    },
-    {
-      "titulo": "Marceneiro",
-      "empresa": "Madeireira São José",
-      "local": "Juazeiro do Norte",
-      "requisitos": "Experiência em marcenaria, ensino fundamental completo.",
-      "segmento": "Construção",
-      "descricao": "Produzir móveis e peças sob medida"
-    },
-    {
-      "titulo": "Auxiliar de Loja",
-      "empresa": "Shopping Juá",
-      "local": "Juazeiro do Norte",
-      "requisitos": "Ensino médio completo, ser comunicativo.",
-      "segmento": "Varejo",
-      "descricao": "Atender clientes e repor mercadorias nas prateleiras"
-    },
-    {
-      "titulo": "Designer Gráfico",
-      "empresa": "Agência Criativa",
-      "local": "Juazeiro do Norte",
-      "requisitos": "Conhecimento em Photoshop, Illustrator e criação de artes.",
-      "segmento": "Marketing",
-      "descricao": "Criar artes digitais e materiais gráficos para campanhas"
-    },
-    {
-      "titulo": "Fotógrafo",
-      "empresa": "Estúdio Flash",
-      "local": "Juazeiro do Norte",
-      "requisitos": "Experiência em fotografia, equipamentos próprios.",
-      "segmento": "Comunicação",
-      "descricao": "Realizar ensaios fotográficos e cobrir eventos"
-    },
-    {
-      "titulo": "Motorista",
-      "empresa": "Transjuá",
-      "local": "Juazeiro do Norte",
-      "requisitos": "CNH categoria D, experiência como motorista.",
-      "segmento": "Transporte",
-      "descricao": "Transportar cargas e passageiros com segurança"
-    },
-    {
-      "titulo": "Analista de RH",
-      "empresa": "RH Solutions",
-      "local": "Juazeiro do Norte",
-      "requisitos": "Formação em Psicologia ou Administração, experiência com recrutamento.",
-      "segmento": "Recursos Humanos",
-      "descricao": "Gerir processos de seleção, recrutamento e treinamento"
-    },
-    {
-      "titulo": "Auxiliar de Escritório",
-      "empresa": "Contábil Juá",
-      "local": "Juazeiro do Norte",
-      "requisitos": "Ensino médio completo, conhecimentos em informática.",
-      "segmento": "ADM",
-      "descricao": "Auxiliar em rotinas administrativas e contábeis"
-    },
-    {
-      "titulo": "Jovem Aprendiz",
-      "empresa": "Banco Ceará",
-      "local": "Juazeiro do Norte",
-      "requisitos": "Ter entre 16 e 22 anos, estar estudando ou ter concluído o ensino médio.",
-      "segmento": "Financeiro",
-      "descricao": "Aprender atividades administrativas e bancárias"
-    },
-    {
-      "titulo": "Estágio em TI",
-      "empresa": "Tech Juá",
-      "local": "Juazeiro do Norte",
-      "requisitos": "Estar cursando Ciência da Computação, Sistemas ou áreas afins.",
-      "segmento": "Tecnologia",
-      "descricao": "Dar suporte em sistemas, redes e programação"
-    }
+    {"titulo":"Auxiliar Administrativo","empresa":"Empresa A","local":"Juazeiro do Norte","requisitos":"Ensino Médio","segmento":"ADM","descricao":"Rotina administrativa"},
+    {"titulo":"Analista de TI","empresa":"Empresa B","local":"Juazeiro do Norte","requisitos":"Formação em TI","segmento":"TI","descricao":"Suporte e manutenção de sistemas"},
+    {"titulo":"Vendedor","empresa":"Empresa C","local":"Juazeiro do Norte","requisitos":"Experiência em vendas","segmento":"Vendas","descricao":"Atendimento ao cliente"},
+    {"titulo":"Assistente de Limpeza","empresa":"Empresa D","local":"Juazeiro do Norte","requisitos":"Ensino Fundamental","segmento":"Limpeza","descricao":"Limpeza de ambientes"},
+    {"titulo":"Estagiário ADM","empresa":"Empresa E","local":"Juazeiro do Norte","requisitos":"Cursando Administração","segmento":"ADM","descricao":"Apoio administrativo"},
+    {"titulo":"Programador","empresa":"Empresa F","local":"Juazeiro do Norte","requisitos":"Conhecimentos em Python","segmento":"TI","descricao":"Desenvolvimento de software"},
+    {"titulo":"Consultor de Vendas","empresa":"Empresa G","local":"Juazeiro do Norte","requisitos":"Experiência em vendas","segmento":"Vendas","descricao":"Prospecção de clientes"},
+    {"titulo":"Auxiliar de Limpeza","empresa":"Empresa H","local":"Juazeiro do Norte","requisitos":"Ensino Fundamental","segmento":"Limpeza","descricao":"Serviços gerais de limpeza"},
+    {"titulo":"Assistente Financeiro","empresa":"Empresa I","local":"Juazeiro do Norte","requisitos":"Ensino Médio","segmento":"ADM","descricao":"Controle de contas"},
+    {"titulo":"Suporte TI","empresa":"Empresa J","local":"Juazeiro do Norte","requisitos":"Formação em TI","segmento":"TI","descricao":"Suporte técnico"},
+    {"titulo":"Gerente de Vendas","empresa":"Empresa K","local":"Juazeiro do Norte","requisitos":"Experiência","segmento":"Vendas","descricao":"Gestão de equipe de vendas"},
+    {"titulo":"Auxiliar de Limpeza Industrial","empresa":"Empresa L","local":"Juazeiro do Norte","requisitos":"Ensino Fundamental","segmento":"Limpeza","descricao":"Limpeza de indústrias"},
+    {"titulo":"Secretário","empresa":"Empresa M","local":"Juazeiro do Norte","requisitos":"Ensino Médio","segmento":"ADM","descricao":"Atendimento e organização"},
+    {"titulo":"Analista de Sistemas","empresa":"Empresa N","local":"Juazeiro do Norte","requisitos":"Formação em TI","segmento":"TI","descricao":"Desenvolvimento de sistemas"},
+    {"titulo":"Representante de Vendas","empresa":"Empresa O","local":"Juazeiro do Norte","requisitos":"Experiência em vendas","segmento":"Vendas","descricao":"Vendas externas"},
+    {"titulo":"Auxiliar de Limpeza Escolar","empresa":"Empresa P","local":"Juazeiro do Norte","requisitos":"Ensino Fundamental","segmento":"Limpeza","descricao":"Limpeza de escolas"},
+    {"titulo":"Assistente Contábil","empresa":"Empresa Q","local":"Juazeiro do Norte","requisitos":"Ensino Médio","segmento":"ADM","descricao":"Contas a pagar e receber"},
+    {"titulo":"Desenvolvedor Web","empresa":"Empresa R","local":"Juazeiro do Norte","requisitos":"Conhecimentos em HTML/CSS","segmento":"TI","descricao":"Desenvolvimento web"},
+    {"titulo":"Atendente de Loja","empresa":"Empresa S","local":"Juazeiro do Norte","requisitos":"Experiência em atendimento","segmento":"Vendas","descricao":"Atendimento ao cliente"},
+    {"titulo":"Faxineiro","empresa":"Empresa T","local":"Juazeiro do Norte","requisitos":"Ensino Fundamental","segmento":"Limpeza","descricao":"Serviços de limpeza"},
+    {"titulo":"Assistente de RH","empresa":"Empresa U","local":"Juazeiro do Norte","requisitos":"Ensino Médio","segmento":"ADM","descricao":"Recrutamento e seleção"},
+    {"titulo":"Técnico de Suporte","empresa":"Empresa V","local":"Juazeiro do Norte","requisitos":"Formação em TI","segmento":"TI","descricao":"Suporte técnico de computadores"},
+    {"titulo":"Consultor Comercial","empresa":"Empresa W","local":"Juazeiro do Norte","requisitos":"Experiência em vendas","segmento":"Vendas","descricao":"Negociação de clientes"},
+    {"titulo":"Auxiliar de Limpeza Hospitalar","empresa":"Empresa X","local":"Juazeiro do Norte","requisitos":"Ensino Fundamental","segmento":"Limpeza","descricao":"Limpeza de hospitais"},
+    {"titulo":"Assistente Administrativo","empresa":"Empresa Y","local":"Juazeiro do Norte","requisitos":"Ensino Médio","segmento":"ADM","descricao":"Suporte administrativo"},
+    {"titulo":"Programador Junior","empresa":"Empresa Z","local":"Juazeiro do Norte","requisitos":"Conhecimentos em Java","segmento":"TI","descricao":"Desenvolvimento de software"},
+    {"titulo":"Vendedor Externo","empresa":"Empresa AA","local":"Juazeiro do Norte","requisitos":"Experiência em vendas","segmento":"Vendas","descricao":"Visitas a clientes"},
+    {"titulo":"Auxiliar de Limpeza Comercial","empresa":"Empresa BB","local":"Juazeiro do Norte","requisitos":"Ensino Fundamental","segmento":"Limpeza","descricao":"Limpeza de estabelecimentos comerciais"},
+    {"titulo":"Secretário Executivo","empresa":"Empresa CC","local":"Juazeiro do Norte","requisitos":"Ensino Médio","segmento":"ADM","descricao":"Atendimento e agenda"},
+    {"titulo":"Desenvolvedor Mobile","empresa":"Empresa DD","local":"Juazeiro do Norte","requisitos":"Conhecimentos em Flutter","segmento":"TI","descricao":"Desenvolvimento de apps móveis"}
   ]
 }
