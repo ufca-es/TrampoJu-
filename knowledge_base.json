@@ -1,102 +1,97 @@
 {
   "perguntas": [
     {
-      "pergunta": "buscar vagas",
+      "pergunta": "",
+      "respostas": []
+    },
+    {
+      "pergunta": "Bom dia!",
       "respostas": [
-        "listagem"
+        "Bom dia! Sou o TrampoJuá, seu ChatBot de empregos, como posso te ajudar?",
+        "Olá, bom dia! Sou o TrampoJuá e é umn prazer te ver por aqui. O que deseja fazer hoje?",
+        "Bom dia!!! Sou um ChatBot de empregos, especialmente treinado para te ajudar. Me chamo TrampoJuá, como posso te ajudar?"
       ]
     },
     {
-      "pergunta": "ADM",
+      "pergunta": "Boa tarde!",
       "respostas": [
-        "ADM"
+        "Boa tarde! Sou o TrampoJuá, seu ChatBot de empregos, como posso te ajudar?",
+        "Olá, boa tarde! Sou o TrampoJuá e é umn prazer te ver por aqui. O que deseja fazer hoje?",
+        "Boa tarde!!! Sou um ChatBot de empregos, especialmente treinado para te ajudar. Me chamo TrampoJuá, como posso te ajudar?"
       ]
     },
     {
-      "pergunta": "TI",
+      "pergunta": "Boa noite!",
       "respostas": [
-        "TI"
+        "Boa noite! Sou o TrampoJuá, seu ChatBot de empregos, como posso te ajudar?",
+        "Olá, boa noite! Sou o TrampoJuá e é umn prazer te ver por aqui. O que deseja fazer hoje?",
+        "Boa noite!!! Sou um ChatBot de empregos, especialmente treinado para te ajudar. Me chamo TrampoJuá, como posso te ajudar?"
       ]
     },
     {
-      "pergunta": "Limpeza",
+      "pergunta": "Como posso fazer um currículo?",
       "respostas": [
-        "Limpeza"
+        "Um bom currículo deve ter: dados pessoais, objetivo, formação, experiências e habilidades. Seja claro e tente não passar de 1 página.",
+        "Para elaborar um currículo adequado, organize suas informações em seções: dados pessoais, objetivo profissional, formação acadêmica, experiências anteriores e competências. Recomenda-se que o documento seja breve e direto, preferencialmente em uma única página.",
+        "Currículo não precisa ser complicado! Coloque seus dados, objetivo, estudos, experiências (se tiver) e habilidades. Dica: mantenha tudo em até 1 página, assim o recrutador lê rapidinho.",
+        "Há vários aplicativos que podem te ajudar a fazer um currículo, como \"Canva\", \"Resume.io\", ou mesmo \" Microsoft Word\"."
       ]
     },
     {
-      "pergunta": "Vendas",
+      "pergunta": "Tchau!",
       "respostas": [
-        "Vendas"
+        "Espero ter te ajudado, até logo!",
+        "Te desejo sucesso com seus objetivos, até mais!",
+        "Estou sempre a disposição para te ajudar. Precisando, é só vir no TrampoJuá. Tchau!"
       ]
     },
     {
-      "pergunta": "Boa Tarde!",
+      "pergunta": "Como posso encontrar mais informações sobre as vagas?",
       "respostas": [
-        "Boa tarde, me chamo TrampoJuá e sou seu chatbot de empregos! em que posso ajudar?",
-        "Boa tarde! Eu sou um ChatBot, criado especialmente para te ajudar a encontrar a sua vaga de emprego. Como posso te ajudar?"
+        "Sua pergnta foi excelente! A melhor forma é indo até o local que está oferecendo a vaga. Mas você pode tentar acessar esse link: https://br.linkedin.com e buscar pela vaga.",
+        "Voce pode acessar esse link: https://br.linkedin.com e verificar se a vaga está cadastrada na plataforma. Senão, a melhor forma é indo até o local de recrutamento.",
+        "O meio mais prático de encontrar é através do Linkedin: https://br.linkedin.com. Caso não encontre, tente ir até o local de recrutamento."
       ]
     },
     {
-      "pergunta": "Bom dia",
+      "pergunta": "Como usar Linkedin?",
       "respostas": [
-        "Boa tarde, sou o trampojua e sou seu chatbot de empregos! em que posso ajudar?"
+        "Vou te explicar melhor como funciona. O linkedin é uma excelente plataforma para apoio profissional, oferecendo pesquisa por vagas e capacidades, nacional e internacional.",
+        "Você pode acessar o Linkedin através desse link: https://br.linkedin.com.",
+        "Primeiramente, acesse o Linkedin através desse link: https://br.linkedin.com. Em seguida, crie um perfil completo, construa uma rede de contatos, participe ativamente da comunidade e encontre vagas."
       ]
     },
     {
-      "pergunta": "tem vagas de emprego?",
+      "pergunta": "Quais habilidades são mais exigidas no mercado de trabalho hoje?",
       "respostas": [
-        "Sim, no nosso menu clique em listar vagas, vai ter diversas vagas, em diferentes setores."
+        "Sua é pergunta é bastante pertinente! Para se destacar no mercado de trabalho hoje, é fundamental combinar habilidades técnicas com competências comportamentais. Desenvolva uma \"Comunicação efetiva\", \"Pensamento crítico e resolução de problemas\", \"Trabalho em equipe\", \"Resiliência\". Além disso, mantenha-se sempre atualizado, sobretudo sobre as novas tecnologias que vão dominar o mercado.",
+        "Para se preparar para o mercado, pratique se comunicar bem, pensamento crítico na resolução de problemas, trabalho em equipe e resiliência. Essas são as \"Soft skills\". Além delas, busque estar sempre atualizado sobre as novas tendências do mercado.",
+        "O ideal é desenvolver tanto \"Soft skills\" (Boa comunicação, trabalho em equipe, resiliência, etc), quanto \"Hard skills\" (Conhecimento técnico geral ou específico de uma área)."
       ]
     },
     {
-      "pergunta": "vagas?",
+      "pergunta": "O que é Linkedin?",
       "respostas": [
-        "sim, tem! no nosso menu, acesse listar vagas, boa sorte!"
+        "Excelente pergunta! O LinkedIn é a maior rede profissional do mundo, com o objetivo de conectar profissionais e empresas. Ele funciona como uma plataforma para encontrar empregos, fazer contatos com colegas e outras pessoas de sua área, e construir sua marca pessoal.",
+        "Sua pegunta é ótima! Linkedin é uma plataforma online cujo principal objetivo é divulgar oportunidades de emprego. Você pode acessá-lo através desse link: https://br.linkedin.com.",
+        "Perfeito! O Linkedin é um site que vai te permitir encontar vagas de emprego, tanto no Brasil, como no resto do mundo. Acesse o Linkedin por esse link: https://br.linkedin.com."
       ]
     },
     {
-      "pergunta": "& C:/Users/rai/AppData/Local/Programs/Python/Python313/python.exe c:/Users/rai/Documents/chatbot_vagas/ma3in.py/main.py",
+      "pergunta": "Quem é você?",
       "respostas": [
-        "sair"
+        "Olá! Me chamo TrampoJuá e sou um ChatBot (uma espécie de robô programado para te ajudar em uma função específica) de busca de empregos em Juazeiro do Norte.",
+        "Fico feliz com sua pergunta! Sou o TrampoJuá, seu robô assistente de empregos em Juazeiro do Norte. Estou disponível para te ajudar independente da sua localidade.",
+        "Para resumir, sou um robô criado para te ajudar a encontrar a oportunidade de emprego ideal em Juazeiro do Norte. Fique a vontade para perguntar, independente da localidade."
       ]
     },
     {
-      "pergunta": "como faço um curriculo?",
+      "pergunta": "O que é um ChatBot?",
       "respostas": [
-        "Um bom currículo deve ter: dados pessoais, objetivo, formação acadêmica, experiências (se houver) e habilidades. Seja claro e direto, de preferência em 1 página."
-      ]
-    },
-    {
-      "pergunta": "curriculo",
-      "respostas": [
-        "Você pode montar seu currículo no Word ou Canva, colocando dados pessoais, objetivo, experiências e cursos. Se quiser posso te dar um modelo básico."
-      ]
-    },
-    {
-      "pergunta": "linkedin",
-      "respostas": [
-        "Você pode acessar e criar seu perfil no LinkedIn por aqui: https://www.linkedin.com/"
-      ]
-    },
-    {
-      "pergunta": "perfil linkedin",
-      "respostas": [
-        "Crie seu perfil no LinkedIn e aumente suas chances de conseguir emprego! Link: https://www.linkedin.com/"
-      ]
-    },
-    {
-      "pergunta": "Olá!",
-      "respostas": [
-        "Olá! Como posso te ajudar?"
-      ]
-    },
-    {
-      "pergunta": "Tchau",
-      "respostas": [
-        "Espero ter te ajudado, até logo!"
+        "Um chatbot é um programa que simula conversas humanas para automatizar tarefas e fornecer respostas. Ele pode ser baseado em regras simples ou usar inteligência artificial para entender e interagir com os usuários por texto ou voz.",
+        "Um chatbot é uma interface conversacional que atua como um assistente virtual, permitindo que você se comunique com um sistema digital de forma natural. Ele serve como uma ponte entre humanos e tecnologia, tornando a interação mais fluida e intuitiva.",
+        "É um software de computador que mantém uma conversa por texto ou voz. Ele pode responder a perguntas, executar comandos e oferecer suporte sem a necessidade de uma pessoa do outro lado."
       ]
     }
-
   ]
 }

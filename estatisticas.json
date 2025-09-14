@@ -1,27 +1,11 @@
 {
   "estatisticas": {
-    "total_interacoes": 81,
+    
     "perguntas": {
-      "buscar_vaga": 9,
-      "bom dia": 6,
-      "& C:/Users/rai/AppData/Local/Programs/Python/Python313/python.exe c:/Users/rai/Downloads/main.py": 2,
-      "com dia": 1,
-      "olá": 1,
-      "pular": 1,
-      "boa tarde]": 1,
-      "boa tarde": 6,
-      "linkedin": 18,
-      "listar_vagas": 9,
-      "vom dia": 1,
-      "curriculo": 11,
-      "& C:/Users/rai/AppData/Local/Programs/Python/Python313/python.exe c:/Users/rai/Documents/chatbot_vagas/main.py": 9,
-      "5": 2,
-      "tchau": 3,
-      "bao trade": 1
+
     },
     "personalidades_usadas": {
-      "engraçado": 4,
-      "formal": 1
+
     }
   }
 }

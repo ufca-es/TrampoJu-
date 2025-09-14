@@ -195,10 +195,11 @@ class ChatBotEmpregos:
             perguntas_base = [i["pergunta"] for i in self.knowledge_base["perguntas"]]
             perguntas_novas = self.load_perguntas_novas()
             todas = perguntas_base + perguntas_novas
+            todas = [p for p in todas if p.strip()]
 
             if todas:
                 contador = Counter(todas)
-                mais_frequentes = [p for p, _ in contador.most_common(5)]  # top 5
+                mais_frequentes = [p for p, _ in contador.most_common(3)]  # top 3
                 print("\n💡 Sugestões de perguntas que você pode fazer:")
                 for s in mais_frequentes:
                     print(f"- {s}")

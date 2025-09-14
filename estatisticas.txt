@@ -1,7 +1,7 @@
-📊 Relatório de Estatísticas - 12/09/2025 01:06:56
+📊 Relatório de Estatísticas - 14/09/2025 16:22:55
 --------------------------------------------------
-Número total de interações: 9
-Pergunta mais feita da sessão: linkedin
+Número total de interações: 1
+Pergunta mais feita da sessão: Como posso fazer um currículo?
 Uso das personalidades:
   - Formal: 1 vezes
   - Orientador: 0 vezes
