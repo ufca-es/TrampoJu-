@@ -1,7 +1,7 @@
-📊 Relatório de Estatísticas - 14/09/2025 16:22:55
+📊 Relatório de Estatísticas - 14/09/2025 17:00:20
 --------------------------------------------------
 Número total de interações: 1
-Pergunta mais feita da sessão: Como posso fazer um currículo?
+Pergunta mais feita da sessão: O que é um ChatBot?
 Uso das personalidades:
   - Formal: 1 vezes
   - Orientador: 0 vezes
