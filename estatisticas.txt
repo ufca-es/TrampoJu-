@@ -1,9 +1,9 @@
-📊 Relatório de Estatísticas - 14/09/2025 17:00:20
+📊 Relatório de Estatísticas - 18/09/2025 00:49:25
 --------------------------------------------------
-Número total de interações: 1
-Pergunta mais feita da sessão: O que é um ChatBot?
+Número total de interações: 7
+Pergunta mais feita da sessão: Bom dia!
 Uso das personalidades:
-  - Formal: 1 vezes
-  - Orientador: 0 vezes
-  - Engraçado: 0 vezes
+  - Formal: 1 vezes
+  - Orientador: 0 vezes
+  - Engraçado: 0 vezes
 --------------------------------------------------

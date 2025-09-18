@@ -59,7 +59,6 @@ class ChatbotApp:
         pergunta_mais_frequente = "Nenhuma"
         if self.perguntas_sessao:
             contador = Counter(self.perguntas_sessao)
-            # Remove perguntas vazias da contagem
             perguntas_filtradas = [p for p in self.perguntas_sessao if p.strip()]
             if perguntas_filtradas:
                 contador = Counter(perguntas_filtradas)
@@ -85,7 +84,6 @@ class ChatbotApp:
         print("\n".join(relatorio))
 
     def mostrar_sugestoes(self):
-        """Exibe sugestões de perguntas mais frequentes."""
         if not self.sugestoes_mostradas:
             perguntas_base = [i["pergunta"] for i in self.conv_manager.knowledge_base["perguntas"]]
             perguntas_novas = self.conv_manager.load_perguntas_novas()
@@ -95,7 +93,7 @@ class ChatbotApp:
 
             if todas:
                 contador = Counter(todas)
-                mais_frequentes = [p for p, _ in contador.most_common(3)]  # top 3
+                mais_frequentes = [p for p, _ in contador.most_common(3)]
                 print("\n💡 Sugestões de perguntas que você pode fazer:")
                 for s in mais_frequentes:
                     print(f"- {s}")
@@ -125,7 +123,6 @@ class ChatbotApp:
                 self.history_manager.historico.append(f"Você: {user_input}")
                 self.history_manager.historico.append(f"{self.nome}: {resposta}")
                 self.history_manager.save_historico()
-
             else:
                 print(self.falar("Não sei responder a isso. Você pode me ensinar?"))
                 self.conv_manager.save_pergunta_nova(user_input)
@@ -139,8 +136,12 @@ class ChatbotApp:
                     self.history_manager.save_historico()
 
     def iniciar(self):
-        print(self.falar("Olá! Sou o TrampoJuá, seu assistente de empregos."))
+        # Primeiro, exibe o histórico
         self.history_manager.mostrar_historico()
+        # Em seguida, limpa o histórico para a nova sessão
+        self.history_manager.limpar_historico()
+        
+        print(self.falar("Olá! Sou o TrampoJuá, seu assistente de empregos."))
 
         while True:
             print("\n--- Menu ---")
