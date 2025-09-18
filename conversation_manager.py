@@ -31,16 +31,24 @@ class ConversationManager:
 
         self.data_manager.save_json(self.conhecimento_file, self.knowledge_base)
 
-    def save_pergunta_nova(self, pergunta: str):
+    def save_pergunta_e_resposta_nova(self, pergunta: str, resposta: str):
         with open(self.perguntas_file, "a", encoding="utf-8") as f:
-            f.write(pergunta + "\n")
-            
-    def load_perguntas_novas(self):
-        perguntas = []
+            f.write(f"Q: {pergunta} | A: {resposta}\n")
+
+    def load_perguntas_e_respostas_novas(self):
+        perguntas_e_respostas = []
         try:
             with open(self.perguntas_file, "r", encoding="utf-8") as f:
                 for linha in f:
-                    perguntas.append(linha.strip())
+                    partes = linha.strip().split(" | A: ")
+                    if len(partes) == 2:
+                        pergunta = partes[0].replace("Q: ", "").strip()
+                        resposta = partes[1].strip()
+                        perguntas_e_respostas.append({"pergunta": pergunta, "resposta": resposta})
         except FileNotFoundError:
             pass
-        return perguntas
+        return perguntas_e_respostas
+
+    def limpar_perguntas_novas(self):
+        with open(self.perguntas_file, "w", encoding="utf-8") as f:
+            f.write("")

@@ -57,13 +57,18 @@ class ChatbotApp:
 
     def gerar_relatorio_estatisticas(self):
         pergunta_mais_frequente = "Nenhuma"
+        perguntas_frequentes_texto = "Nenhuma pergunta comum na sessão."
         if self.perguntas_sessao:
             contador = Counter(self.perguntas_sessao)
             perguntas_filtradas = [p for p in self.perguntas_sessao if p.strip()]
             if perguntas_filtradas:
                 contador = Counter(perguntas_filtradas)
                 pergunta_mais_frequente, _ = contador.most_common(1)[0]
-        
+                
+                top_perguntas = contador.most_common(5)
+                if top_perguntas:
+                    perguntas_frequentes_texto = "\n".join([f"  - {p[0]} ({p[1]} vezes)" for p in top_perguntas])
+
         relatorio = [
             f"📊 Relatório de Estatísticas - {datetime.now().strftime('%d/%m/%Y %H:%M:%S')}",
             "-" * 50,
@@ -73,6 +78,9 @@ class ChatbotApp:
             f"  - Formal: {self.personalidades_usadas['formal']} vezes",
             f"  - Orientador: {self.personalidades_usadas['orientador']} vezes",
             f"  - Engraçado: {self.personalidades_usadas['engraçado']} vezes",
+            "-" * 50,
+            "\n💡 Sugestões de perguntas baseadas na sessão:",
+            perguntas_frequentes_texto,
             "-" * 50,
         ]
         
@@ -86,9 +94,11 @@ class ChatbotApp:
     def mostrar_sugestoes(self):
         if not self.sugestoes_mostradas:
             perguntas_base = [i["pergunta"] for i in self.conv_manager.knowledge_base["perguntas"]]
-            perguntas_novas = self.conv_manager.load_perguntas_novas()
+            perguntas_e_respostas_novas = self.conv_manager.load_perguntas_e_respostas_novas()
             
-            todas = perguntas_base + perguntas_novas
+            # Aqui, você decide se quer incluir as perguntas novas nas sugestões
+            # O exemplo a seguir inclui apenas as perguntas da base de conhecimento
+            todas = perguntas_base
             todas = [p for p in todas if p.strip()]
 
             if todas:
@@ -125,21 +135,20 @@ class ChatbotApp:
                 self.history_manager.save_historico()
             else:
                 print(self.falar("Não sei responder a isso. Você pode me ensinar?"))
-                self.conv_manager.save_pergunta_nova(user_input)
                 new_answer = input("Digite a resposta ou 'pular' para pular: ")
 
                 if new_answer.lower() != "pular":
                     self.conv_manager.aprender_nova_resposta(user_input, new_answer)
                     print(self.falar("Obrigado! Aprendi uma nova resposta!"))
+                    self.conv_manager.save_pergunta_e_resposta_nova(user_input, new_answer)
                     self.history_manager.historico.append(f"Você: {user_input}")
                     self.history_manager.historico.append(f"{self.nome}: {new_answer}")
                     self.history_manager.save_historico()
 
     def iniciar(self):
-        # Primeiro, exibe o histórico
         self.history_manager.mostrar_historico()
-        # Em seguida, limpa o histórico para a nova sessão
         self.history_manager.limpar_historico()
+        self.conv_manager.limpar_perguntas_novas()
         
         print(self.falar("Olá! Sou o TrampoJuá, seu assistente de empregos."))
 
@@ -195,6 +204,14 @@ class ChatbotApp:
             
             elif opcao == "7":
                 self.gerar_relatorio_estatisticas()
+                # Exibe as novas perguntas e respostas aprendidas na sessão antes de sair
+                novos_aprendizados = self.conv_manager.load_perguntas_e_respostas_novas()
+                if novos_aprendizados:
+                    print("\n🎉 Novos aprendizados desta sessão:")
+                    for item in novos_aprendizados:
+                        print(f"- Pergunta: '{item['pergunta']}' -> Resposta: '{item['resposta']}'")
+                    print("-" * 40)
+                    
                 print(self.falar("Até logo! Boa sorte na sua carreira!"))
                 break
             

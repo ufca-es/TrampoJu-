@@ -1,9 +1,14 @@
-📊 Relatório de Estatísticas - 18/09/2025 00:49:25
+📊 Relatório de Estatísticas - 18/09/2025 01:48:14
 --------------------------------------------------
-Número total de interações: 7
-Pergunta mais feita da sessão: Bom dia!
+Número total de interações: 9
+Pergunta mais feita da sessão: Linkedin
 Uso das personalidades:
   - Formal: 1 vezes
   - Orientador: 0 vezes
   - Engraçado: 0 vezes
+--------------------------------------------------
+
+💡 Sugestões de perguntas baseadas na sessão:
+  - Linkedin (8 vezes)
+  - Como posso fazer um currículo? (1 vezes)
 --------------------------------------------------
