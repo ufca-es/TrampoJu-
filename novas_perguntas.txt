@@ -1,0 +1,5 @@
+Q: LinkedIn | A: Não sei a resposta.
+Q: ola | A: Ainda não sei a resposta.
+Q: teste | A: Ainda não sei a resposta.
+Q: novo | A: Ainda não sei a resposta.
+Q: sair | A: Ainda não sei a resposta.
